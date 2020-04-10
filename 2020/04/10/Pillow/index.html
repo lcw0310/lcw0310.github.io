@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8" >
+    <meta name="baidu-site-verification" content="dIcXMeY8Ya" />
+    
+    <title>Pillow | 技术笔记-人生苦短</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" >
+    <meta name="keywords" content="Dipan, 有何不可, Web, 技术, 后端开发" >
+    <meta name="description" content="Dipan个人技术博客" >
+
+    
+    <link rel="alternative" href="/atom.xml" title="技术笔记-人生苦短" type="application/atom+xml" >
+    
+    
+    <link rel="shortcut icon" href="/favicon.ico" >
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!--[if lt IE 9]>
+    
+<script src="/js/html5.js"></script>
+
+    <![endif]-->
+    
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d5ebf515ab530cfbdda5f5c85093fb41";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="home">
+    <!--[if lt IE 9]>
+    <div class="browsehappy">
+        当前网页 <strong>不支持</strong>
+        你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/" target="_blank" rel="noopener">升级你的浏览器</a>.
+    </div>
+    <![endif]-->
+
+    <!-- 博客头部 -->
+    <header class="header">
+    <section class="container header-main">
+        <div class="logo">
+            <a href="/">
+                <div class="cover">
+                    <!-- <span class="name">Dipan技术笔记-人生苦短</span>
+                    <span class="description">个人技术博客</span> -->
+                    <span class="name">Dipan</span>
+                    <span class="description">个人技术博客</span>
+                </div>
+            </a>
+        </div>
+        <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
+        <ul class="menu hidden" id="JELON__menu">
+            
+            <li rel="/2020/04/10/Pillow/index.html" class="item ">
+                <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
+            </li>
+            
+            <li rel="/2020/04/10/Pillow/index.html" class="item ">
+                <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
+            </li>
+            
+            <li rel="/2020/04/10/Pillow/index.html" class="item ">
+                <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
+            </li>
+            
+        </ul>
+        <div class="profile clearfix">
+            <div class="feeds fl">
+                
+                
+                <p class="links">
+                    
+                        <a href="https://github.com/lcw0310" target="_blank">Github</a>
+                        |
+                    
+                        <a href="" target="_blank">有何不可</a>
+                        
+                    
+                </p>
+                <p class="sns">
+                    
+                        <a href="https://weibo.com/5735489661/profile?topnav=1&amp;wvr=6&amp;is_all=1" class="sinaweibo" target="_blank"><b>■</b> 新浪微博</a>
+                    
+                    <a href="javascript: void(0);" class="wechat">
+                        <b>■</b>
+                        公众号
+                        <span class="popover">
+                            <img src="/img/wechat_mp.jpg" width="120" height="120" alt="我的微信订阅号">
+                            <i class="arrow"></i>
+                        </span>
+                    </a>
+                </p>
+                
+            </div>
+            <div class="avatar fr">
+                <img src="http://q8kgiw02q.bkt.clouddn.com/dipan.jpg" alt="avatar" title="Jelon" >
+            </div>
+        </div>
+    </section>
+</header>
+
+
+    <!-- 博客正文 -->
+    <div class="container body clearfix">
+        <section class="content">
+            <div class="content-main widget">
+                <!-- 文章页 -->
+<!-- 文章 -->
+<article class="post article">
+    <header class="text-center">
+        <h3 class="post-title"><span>Pillow</span></h3>
+    </header>
+    <p class="post-meta text-center">
+        Dipan 发表于
+        <time datetime="2020-04-10T08:37:04.000Z">2020-04-10</time>
+    </p>
+    <div class="post-content">
+        <p>PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。</p>
+<p>由于PIL仅支持到Python 2.7，加上年久失修，于是一群志愿者在PIL的基础上创建了兼容的版本，名字叫Pillow，支持最新Python 3.x，又加入了许多新特性，因此，我们可以直接安装使用Pillow。</p>
+<h1 id="安装Pillow"><a href="#安装Pillow" class="headerlink" title="安装Pillow"></a>安装Pillow</h1><p>如果你的PC已经安装了Anaconda，Pillow就已经可用了。否则，需要在命令行下通过pip安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip install Pillow</span><br><span class="line"># 如果pip安装慢的话可以通过镜像源快速安装</span><br><span class="line">pip install Pillow -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple</span><br></pre></td></tr></table></figure>
+<h1 id="图像操作"><a href="#图像操作" class="headerlink" title="图像操作"></a>图像操作</h1><p>来看看最常见的图像缩放操作，只需三四行代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开一个jpg图像文件，注意是当前路径:</span></span><br><span class="line">im = Image.open(<span class="string">'test.jpg'</span>)</span><br><span class="line"><span class="comment"># 获得图像尺寸:</span></span><br><span class="line">w, h = im.size</span><br><span class="line">print(<span class="string">'Original image size: %sx%s'</span> % (w, h))</span><br><span class="line"><span class="comment"># 缩放到50%:</span></span><br><span class="line">im.thumbnail((w//<span class="number">2</span>, h//<span class="number">2</span>))</span><br><span class="line">print(<span class="string">'Resize image to: %sx%s'</span> % (w//<span class="number">2</span>, h//<span class="number">2</span>))</span><br><span class="line"><span class="comment"># 把缩放后的图像用jpeg格式保存:</span></span><br><span class="line">im.save(<span class="string">'thumbnail.jpg'</span>, <span class="string">'jpeg'</span>)</span><br></pre></td></tr></table></figure>
+<p>其他功能如切片、旋转、滤镜、输出文字、调色板等一应俱全。</p>
+<p>比如，模糊效果也只需几行代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image, ImageFilter</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开一个jpg图像文件，注意是当前路径:</span></span><br><span class="line">im = Image.open(<span class="string">'test.jpg'</span>)</span><br><span class="line"><span class="comment"># 应用模糊滤镜:</span></span><br><span class="line">im2 = im.filter(ImageFilter.BLUR)</span><br><span class="line">im2.save(<span class="string">'blur.jpg'</span>, <span class="string">'jpeg'</span>)</span><br></pre></td></tr></table></figure>
+<p>效果如下：<br><img src="http://q8kgiw02q.bkt.clouddn.com/blur.jpg" alt="blur"><br>PIL的ImageDraw提供了一系列绘图方法，让我们可以直接绘图。比如要生成字母验证码图片：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image, ImageDraw, ImageFont, ImageFilter</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 随机字母:</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rndChar</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> chr(random.randint(<span class="number">65</span>, <span class="number">90</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 随机颜色1:</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rndColor</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (random.randint(<span class="number">64</span>, <span class="number">255</span>), random.randint(<span class="number">64</span>, <span class="number">255</span>), random.randint(<span class="number">64</span>, <span class="number">255</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 随机颜色2:</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rndColor2</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (random.randint(<span class="number">32</span>, <span class="number">127</span>), random.randint(<span class="number">32</span>, <span class="number">127</span>), random.randint(<span class="number">32</span>, <span class="number">127</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 240 x 60:</span></span><br><span class="line">width = <span class="number">60</span> * <span class="number">4</span></span><br><span class="line">height = <span class="number">60</span></span><br><span class="line">image = Image.new(<span class="string">'RGB'</span>, (width, height), (<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>))</span><br><span class="line"><span class="comment"># 创建Font对象:</span></span><br><span class="line">font = ImageFont.truetype(<span class="string">'Arial.ttf'</span>, <span class="number">36</span>)</span><br><span class="line"><span class="comment"># 创建Draw对象:</span></span><br><span class="line">draw = ImageDraw.Draw(image)</span><br><span class="line"><span class="comment"># 填充每个像素:</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range(width):</span><br><span class="line">    <span class="keyword">for</span> y <span class="keyword">in</span> range(height):</span><br><span class="line">        draw.point((x, y), fill=rndColor())</span><br><span class="line"><span class="comment"># 输出文字:</span></span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">    draw.text((<span class="number">60</span> * t + <span class="number">10</span>, <span class="number">10</span>), rndChar(), font=font, fill=rndColor2())</span><br><span class="line"><span class="comment"># 模糊:</span></span><br><span class="line">image = image.filter(ImageFilter.BLUR)</span><br><span class="line">image.save(<span class="string">'code.jpg'</span>, <span class="string">'jpeg'</span>)</span><br></pre></td></tr></table></figure>
+<p>我们用随机颜色填充背景，再画上文字，最后对图像进行模糊，得到验证码图片如下：<br><img src="http://q8kgiw02q.bkt.clouddn.com/code.jpg" alt="cord"><br>如果运行的时候报错：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IOError: cannot open resource</span><br></pre></td></tr></table></figure>
+<p>这是因为PIL无法定位到字体文件的位置，可以根据操作系统提供绝对路径，比如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'C:\Windows\Fonts\Arial.ttf'</span></span><br></pre></td></tr></table></figure>
+<p>要详细了解PIL的强大功能，请请参考Pillow官方文档：</p>
+<p><a href="https://pillow.readthedocs.org/" target="_blank" rel="noopener">https://pillow.readthedocs.org/</a></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>PIL提供了操作图像的强大功能，可以通过简单的代码完成复杂的图像处理。</p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017785454949568" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/1016959663602400/1017785454949568</a></p>
+<h1 id="参考源码"><a href="#参考源码" class="headerlink" title="参考源码"></a>参考源码</h1><p><a href="https://github.com/michaelliao/learn-python3/blob/master/samples/packages/pil/use_pil_resize.py" target="_blank" rel="noopener">https://github.com/michaelliao/learn-python3/blob/master/samples/packages/pil/use_pil_resize.py</a></p>
+<p><a href="https://github.com/michaelliao/learn-python3/blob/master/samples/packages/pil/use_pil_blur.py" target="_blank" rel="noopener">https://github.com/michaelliao/learn-python3/blob/master/samples/packages/pil/use_pil_blur.py</a></p>
+<p><a href="https://github.com/michaelliao/learn-python3/blob/master/samples/packages/pil/use_pil_draw.py" target="_blank" rel="noopener">https://github.com/michaelliao/learn-python3/blob/master/samples/packages/pil/use_pil_draw.py</a></p>
+
+    </div>
+    <p class="post-meta">
+        <span class="post-cat">分类：
+            <a class="cat-link" href="/categories/Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/">Python第三方库</a>
+        </span>
+        <span class="post-tags">
+            标签：
+            
+    
+        <a href="/tags/python/" title="python">python</a>
+    
+
+        </span>
+    </p>
+</article>
+<!-- 分享按钮 -->
+
+  <div class="article-share clearfix text-center">
+    <div class="share-area">
+      <span class="share-txt">分享到：</span>
+      <a href="javascript: window.open('http://service.weibo.com/share/share.php?url=' + encodeURIComponent(location.href) + '&title=' + document.title + '&language=zh_cn');" class="share-icon weibo"></a>
+      <a href="javascript: alert('请复制链接到微信并发送');" class="share-icon wechat"></a>
+      <a href="javascript: window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + encodeURIComponent(location.href) + '&title=' + document.title);" class="share-icon qqzone"></a>
+      <a href="javascript: window.open('http://connect.qq.com/widget/shareqq/index.html?url=' + encodeURIComponent(location.href) + '&desc=Dipan个人博客&title=' + document.title + '&callback=' + encodeURIComponent(location.href));" class="share-icon qq"></a>
+      <a href="javascript: window.open('http://shuo.douban.com/!service/share?href=' + encodeURIComponent(location.href) + '&name=' + document.title + '&text=' + document.title);" class="share-icon douban"></a>
+    </div>
+  </div>
+
+
+<!-- 上一篇/下一篇 -->
+
+<div class="article-nav clearfix">
+    
+    <span class="prev fl">
+        上一篇<br >
+        <a href="javascript: void(0);">没有上一篇了</a>
+    </span>
+    
+
+    
+    <span class="next fr">
+        下一篇<br >
+        <a href="/2020/04/09/Python%E5%BA%94%E7%94%A8%E8%8C%83%E5%9B%B4/">
+            
+                Python应用范围
+            
+        </a>
+    </span>
+    
+</div>
+
+<!-- 文章评论 -->
+
+  
+<script src="/js/comment.js"></script>
+
+  <div id="comments" class="comment">
+    <!--
+    <div class="sign-bar">
+      GitHub 已登录!
+      <span class="sign-link">登出</span>
+    </div>
+    <section class="box">
+      <div class="com-avatar"><img src="/img/jelon.jpg" alt="avatar"></div>
+      <div class="com-text">
+        <div class="main">
+          <textarea class="text-area-edited show" placeholder="欢迎评论！"></textarea>
+          <div class="text-area-preview"></div>
+        </div>
+        <div class="switch">
+          <div class="switch-item on">编辑</div>
+          <div class="switch-item">预览</div>
+        </div>
+        <div class="button">提交</div>
+      </div>
+    </section>
+    <section class="tips">注：评论支持 markdown 语法！</section>
+    <section class="list-wrap">
+      <ul class="list">
+        <li>
+          <div class="user-avatar">
+            <a href="/">
+              <img src="/img/jelon.jpg" alt="user-avatar">
+            </a>
+          </div>
+          <div class="user-comment">
+            <div class="user-comment-header">
+              <span class="post-name">张德龙</span>
+              <span class="post-time">2017年12月12日</span>
+              <span class="like liked">已赞</span>
+              <span class="like-num">2</span>
+            </div>
+            <div class="user-comment-body">333333</div>
+          </div>
+        </li>
+        <li>
+          <div class="user-avatar">
+            <a href="/">
+              <img src="/img/jelon.jpg" alt="user-avatar">
+            </a>
+          </div>
+          <div class="user-comment">
+            <div class="user-comment-header">
+              <span class="post-name">刘德华</span>
+              <span class="post-time">2017年12月12日</span>
+              <span class="like">点赞</span>
+              <span class="like-num">2</span>
+            </div>
+            <div class="user-comment-body">vvvvv</div>
+          </div>
+        </li>
+      </ul>
+      <div class="page-nav">
+        <a href="javascript: void(0);" class="item">1</a>
+        <a href="javascript: void(0);" class="item">2</a>
+        <a href="javascript: void(0);" class="item current">3</a>
+      </div>
+    </section>
+    -->
+  </div>
+  <script>
+  JELON.Comment({
+    container: 'comments',
+    label: 'Pillow' || '2020/04/10/Pillow/',
+    owner: 'lcw0310',
+    repo: 'blog_comments',
+    clientId: 'e537709ed341b65d8ac9',
+    clientSecret: '692d063339cdefdf7670c837d02df09b72c14beb'
+  });
+  </script>
+
+
+            </div>
+
+        </section>
+        <!-- 侧栏部分 -->
+<aside class="sidebar">
+    
+    <section class="widget">
+        <h3 class="widget-hd"><strong>文章搜索</strong></h3>
+        <div class="search-form">
+  <form
+    id="searchForm"
+    method="GET"
+    action="https://www.baidu.com/s"
+    ectype="application/x-www-form-urlencoded"
+    target="_blank"
+    autocomplete="false"
+    onsubmit="javascript: return false;">
+    <input
+      id="searchKeyword"
+      type="text"
+      class="form-control"
+      placeholder="输入关键字搜索"
+      autocomplete="false"
+    />
+    <input id="searchKeywordHidden" type="hidden" name="wd" />
+    <input id="searchButton" class="btn" type="submit" value="搜索" />
+  </form>
+</div>
+    </section>
+    
+
+    <section class="widget">
+        <h3 class="widget-hd"><strong>文章分类</strong></h3>
+        <!-- 文章分类 -->
+<ul class="widget-bd">
+    
+    <li>
+        <a href="/categories/Python%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/">Python第三方库</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/Python%E6%8A%80%E6%9C%AF/">Python技术</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/Python%E6%95%99%E7%A8%8B/">Python教程</a>
+        <span class="badge">(2)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/It%E5%9C%88/">It圈</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+</ul>
+    </section>
+
+    
+    <section class="widget">
+        <h3 class="widget-hd"><strong>热门标签</strong></h3>
+        <!-- 文章标签 -->
+<div class="widget-bd tag-wrap">
+  
+    <a class="tag-item" href="/tags/python/" title="python">python (1)</a>
+  
+    <a class="tag-item" href="/tags/pip/" title="pip">pip (1)</a>
+  
+    <a class="tag-item" href="/tags/Python/" title="Python">Python (2)</a>
+  
+    <a class="tag-item" href="/tags/It%E6%96%B0%E9%97%BB/" title="It新闻">It新闻 (1)</a>
+  
+</div>
+    </section>
+    
+
+    
+
+    
+    <!-- 友情链接 -->
+    <section class="widget">
+        <h3 class="widget-hd"><strong>友情链接</strong></h3>
+        <!-- 文章分类 -->
+<ul class="widget-bd">
+    
+        <li>
+            <a href="https://github.com/lcw0310" target="_blank" title="Github">Github</a>
+        </li>
+    
+        <li>
+            <a href="https://blog.csdn.net/weixin_42657101" target="_blank" title="CSDN">CSDN</a>
+        </li>
+    
+</ul>
+    </section>
+    
+</aside>
+<!-- / 侧栏部分 -->
+    </div>
+
+    <!-- 博客底部 -->
+    <footer class="footer">
+    &copy;
+    <!-- 
+        2016-2020
+     -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <!-- <a href="/">Dipan Loves You</a> -->
+</footer>
+<div class="back-to-top" id="JELON__backToTop" title="返回顶部">返回顶部</div>
+
+    <!--博客js脚本 -->
+    <!-- 这里放网站js脚本 -->
+
+<script src="/js/main.js?v=1586518856092.js"></script>
+
+</body>
+</html>

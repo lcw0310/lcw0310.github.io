@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dipan.info/comment/index.html</loc>
+    
+    <lastmod>2020-04-10T11:38:22.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dipan.info/2020/03/29/%E5%BE%AE%E8%BD%AF-GitHub-%E5%AE%A3%E5%B8%83%E6%94%B6%E8%B4%AD-npm/</loc>
+    
+    <lastmod>2020-04-10T11:01:30.447Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dipan.info/2020/04/10/Pillow/</loc>
+    
+    <lastmod>2020-04-10T10:52:29.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dipan.info/2020/04/09/Python%E7%AE%80%E4%BB%8B/</loc>
+    
+    <lastmod>2020-04-10T09:15:45.410Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dipan.info/2020/04/09/Python%E5%BA%94%E7%94%A8%E8%8C%83%E5%9B%B4/</loc>
+    
+    <lastmod>2020-04-10T09:15:37.062Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dipan.info/2020/04/04/Python%E4%BD%BF%E7%94%A8%E9%95%9C%E5%83%8F%E6%BA%90%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%96%B9%E6%B3%95/</loc>
     
-    <lastmod>2020-04-09T02:16:43.525Z</lastmod>
+    <lastmod>2020-04-10T09:12:48.453Z</lastmod>
     
   </url>
   
@@ -12,13 +47,6 @@
     <loc>https://dipan.info/about/index.html</loc>
     
     <lastmod>2020-04-04T09:58:20.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dipan.info/comment/index.html</loc>
-    
-    <lastmod>2020-04-04T09:55:06.054Z</lastmod>
     
   </url>
   
